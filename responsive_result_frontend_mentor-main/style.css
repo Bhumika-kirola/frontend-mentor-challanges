@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: hsl(221, 100%, 96%);
+    --card-leftside: hsla(256, 72%, 46%, 1);
+    --Light-red: hsl(0, 100%, 67%, 0.1);
+    --red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%, 0.1);
+    --yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%, 0.1);
+    --Green: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --blue: hsla(256, 72%, 46%, 0.1);
+    --Violet-blue: hsla(256, 72%, 46%);
+    --Viole-blue: hsla(256, 72%, 46%, 0.1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    background-color: var(--body-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-style: normal;
+}
+
+.card {
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+.anima {
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 15px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    width: 300px;
+}
+
+h1 {
+    color: var(--Light-lavender);
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.res-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--Light-royal-blue), transparent);
+
+}
+
+span.remark {
+    margin: 22px;
+    font-size: 41px;
+    color: var(--White);
+}
+
+span.num {
+    font-size: 60px;
+}
+
+span.total {
+    font-size: 18px;
+    color: var(--Light-lavender);
+}
+
+p {
+    text-align: center;
+}
+
+.summary {
+    background: var(--White);
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    color: var(--Dark-gray-blue);
+    font-size: 28px;
+    font-weight: bolder;
+    align-self: flex-start;
+}
+
+.box {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+    margin: 8px 0px;
+}
+
+.heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.heading.react {
+    color: var(--red);
+}
+
+.reaction.box {
+    background-color: var(--Light-red);
+    border-radius: 15px;
+}
+
+.heading.mem {
+    color: var(--yellow);
+}
+
+.memory.box {
+    background-color: var(--Orangey-yellow);
+    border-radius: 15px;
+}
+
+.heading.veb {
+    color: var(--Green);
+}
+
+.verbal.box {
+    background-color: var(--Green-teal);
+    border-radius: 15px;
+}
+
+.heading.visual {
+    color: var(--Violet-blue);
+}
+
+.visual.box {
+    background-color: var(--Viole-blue);
+    border-radius: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+button {
+    width: 297px;
+    border-radius: 55px;
+    color: var(--White);
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+button:hover,
+button:active {
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    transition: all 0.7s ease;
+}
+
+@media screen and (max-width: 500px) {
+
+    .card {
+        border-radius: 0px 15px 0px 15px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anima {
+        width: 100vw;
+        background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+        border-radius: 0px 0px 85px 85px;
+        color: var(--White);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3.1rem;
+    }
+
+    h1 {
+        color: var(--Light-lavender);
+        font-size: 1.2rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .res-circle {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, var(--Light-royal-blue), transparent);
+
+    }
+
+    span.remark {
+        margin: 1.4rem;
+        font-size: 2.2rem;
+        color: var(--White);
+    }
+
+    span.num {
+        font-size: 3.8rem;
+    }
+
+    span.total {
+        font-size: 1.1rem;
+        color: var(--Light-lavender);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .summary {
+        background: var(--White);
+        padding: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .head {
+        color: var(--Dark-gray-blue);
+        font-size: 1.5rem;
+        font-weight: bolder;
+        align-self: flex-start;
+    }
+
+    .box {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 8px 0px;
+    }
+
+    .heading.react {
+        color: var(--red);
+    }
+
+    .reaction.box {
+        background-color: var(--Light-red);
+        border-radius: 15px;
+    }
+
+    .heading.mem {
+        color: var(--yellow);
+    }
+
+    .memory.box {
+        background-color: var(--Orangey-yellow);
+        border-radius: 15px;
+    }
+
+    .heading.veb {
+        color: var(--Green);
+    }
+
+    .verbal.box {
+        background-color: var(--Green-teal);
+        border-radius: 15px;
+    }
+
+    .heading.visual {
+        color: var(--Violet-blue);
+    }
+
+    .visual.box {
+        background-color: var(--Viole-blue);
+        border-radius: 15px;
+    }
+
+    button {
+        width: auto;
+        border-radius: 55px;
+        color: var(--White);
+        background-color: var(--Dark-gray-blue);
+        border: none;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    button:hover,
+    button:active {
+        background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+        transition: all 0.7s ease;
+    }
+    footer{
+        display: none;
+    }
+
+
+}
