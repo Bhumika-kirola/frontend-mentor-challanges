@@ -55,6 +55,7 @@ header{
     background-color: var(--white);
     padding: 3rem 5rem 2rem 2rem;
     border-radius: 10px 10px 0 0;
+    width: 100%;
 }
 main{
     display: flex;
@@ -148,4 +149,36 @@ footer{
     position: absolute;
     bottom: 2px;    
     left: 2px;
+}
+
+
+/* 
+
+media queries
+
+
+*/
+
+@media only screen and (max-width: 870px) {
+    .card{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 70%;
+    }
+    main{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .card{
+        width: 80%;
+    }
+    main{
+        flex-direction: column;
+    }
 }
