@@ -1,0 +1,75 @@
+/* 
+
+GLOBAL
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 
+
+color
+
+*/
+
+:root{
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta:hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+/* 
+
+card
+
+*/
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: League Spartan, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.page{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-box{
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+.heading{
+    color: var(--Very-Dark-Magenta);
+    font-size: 2rem;
+    margin-block-end: 2rem;
+    width: 70%;
+}
+.info{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 1.2rem;
+    width: 50%;
+}
+
